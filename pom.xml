@@ -15,7 +15,7 @@
 	<properties>
 		<spring-cloud.version>Finchley.M9</spring-cloud.version>
 		<github.global.server>github</github.global.server>
-		<logstash-logback-encoder.version>4.6</logstash-logback-encoder.version>
+		<logstash-logback-encoder.version>5.1</logstash-logback-encoder.version>
 		<!-- spring cloud 默认集成的 zipkin 2.6.3 版本不兼容显式依赖 2.9.3 版本 -->
 		<io.zipkin.zipkin2.zipkin.version>2.9.3</io.zipkin.zipkin2.zipkin.version>
 	</properties>
