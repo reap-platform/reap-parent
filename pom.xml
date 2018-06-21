@@ -1,5 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
@@ -18,6 +17,7 @@
 		<logstash-logback-encoder.version>5.1</logstash-logback-encoder.version>
 		<!-- spring cloud 默认集成的 zipkin 2.6.3 版本不兼容显式依赖 2.9.3 版本 -->
 		<io.zipkin.zipkin2.zipkin.version>2.9.3</io.zipkin.zipkin2.zipkin.version>
+		<janino.version>3.0.6</janino.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -34,9 +34,14 @@
 				<version>${logstash-logback-encoder.version}</version>
 			</dependency>
 			<dependency>
-			   <groupId>io.zipkin.zipkin2</groupId>
-			   <artifactId>zipkin</artifactId>
-			   <version>${io.zipkin.zipkin2.zipkin.version}</version>
+				<groupId>io.zipkin.zipkin2</groupId>
+				<artifactId>zipkin</artifactId>
+				<version>${io.zipkin.zipkin2.zipkin.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.codehaus.janino</groupId>
+				<artifactId>janino</artifactId>
+				<version>${janino.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
@@ -681,6 +686,14 @@
 								<groupId>io.zipkin.reporter2</groupId>
 								<artifactId>zipkin-sender-amqp-client</artifactId>
 							</exclude>
+							<exclude>
+                                <groupId>org.codehaus.janino</groupId>
+                                <artifactId>commons-compiler</artifactId>
+                            </exclude>
+                            <exclude>
+                                <groupId>org.codehaus.janino</groupId>
+                                <artifactId>janino</artifactId>
+                            </exclude>
 						</excludes>
 					</configuration>
 				</plugin>
