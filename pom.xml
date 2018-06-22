@@ -715,11 +715,12 @@
 					<noJekyll>true</noJekyll>
 					<outputDirectory>${project.build.directory}/mvn-repo</outputDirectory>
 					<branch>refs/heads/master</branch>
+					<merge>true</merge>
 					<includes>
 						<include>**/*</include>
 					</includes>
-					<repositoryName>maven-repository</repositoryName>
-					<repositoryOwner>7upcat</repositoryOwner>
+					<repositoryName>reap-maven-repository</repositoryName>
+					<repositoryOwner>reap-platform</repositoryOwner>
 				</configuration>
 				<executions>
 					<execution>
@@ -733,23 +734,10 @@
 		</plugins>
 	</build>
 
-	<distributionManagement>
-		<snapshotRepository>
-			<id>sonatype-nexus-snapshots</id>
-			<name>Sonatype Nexus snapshot repository</name>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
-		</snapshotRepository>
-		<repository>
-			<id>sonatype-nexus-staging</id>
-			<name>Sonatype Nexus release repository</name>
-			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-		</repository>
-	</distributionManagement>
-
 	<repositories>
 		<repository>
-			<id>maven-repo-master</id>
-			<url>https://raw.github.com/7upcat/maven-repository/master/</url>
+			<id>reap-maven-repository</id>
+			<url>https://raw.github.com/reap-platform/reap-maven-repository/master/</url>
 			<snapshots>
 				<enabled>true</enabled>
 				<updatePolicy>always</updatePolicy>
