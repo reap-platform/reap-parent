@@ -687,13 +687,13 @@
 								<artifactId>zipkin-sender-amqp-client</artifactId>
 							</exclude>
 							<exclude>
-                                <groupId>org.codehaus.janino</groupId>
-                                <artifactId>commons-compiler</artifactId>
-                            </exclude>
-                            <exclude>
-                                <groupId>org.codehaus.janino</groupId>
-                                <artifactId>janino</artifactId>
-                            </exclude>
+								<groupId>org.codehaus.janino</groupId>
+								<artifactId>commons-compiler</artifactId>
+							</exclude>
+							<exclude>
+								<groupId>org.codehaus.janino</groupId>
+								<artifactId>janino</artifactId>
+							</exclude>
 						</excludes>
 					</configuration>
 				</plugin>
@@ -733,31 +733,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
-	<repositories>
-		<repository>
-			<id>reap-maven-repository</id>
-			<url>https://raw.github.com/reap-platform/reap-maven-repository/master/</url>
-			<snapshots>
-				<enabled>true</enabled>
-				<updatePolicy>always</updatePolicy>
-			</snapshots>
-		</repository>
-		<repository>
-			<id>spring-snapshots</id>
-			<name>Spring Snapshots</name>
-			<url>https://repo.spring.io/snapshot</url>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</repository>
-		<repository>
-			<id>spring-milestones</id>
-			<name>Spring Milestones</name>
-			<url>https://repo.spring.io/milestone</url>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
-	</repositories>
 </project>
