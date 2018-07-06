@@ -12,7 +12,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<properties>
-		<spring-cloud.version>Finchley.M9</spring-cloud.version>
+		<spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
 		<github.global.server>github</github.global.server>
 		<logstash-logback-encoder.version>5.1</logstash-logback-encoder.version>
 		<!-- spring cloud 默认集成的 zipkin 2.6.3 版本不兼容显式依赖 2.9.3 版本 -->
