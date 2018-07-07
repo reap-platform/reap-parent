@@ -18,6 +18,7 @@
 		<!-- spring cloud 默认集成的 zipkin 2.6.3 版本不兼容显式依赖 2.9.3 版本 -->
 		<io.zipkin.zipkin2.zipkin.version>2.9.3</io.zipkin.zipkin2.zipkin.version>
 		<janino.version>3.0.6</janino.version>
+		<spring-boot-starter-data-mybatis.version>1.0.0-SNAPSHOT</spring-boot-starter-data-mybatis.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -27,6 +28,11 @@
 				<version>${spring-cloud.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.reap</groupId>
+				<artifactId>spring-boot-starter-data-mybatis</artifactId>
+				<version>${spring-boot-starter-data-mybatis.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>net.logstash.logback</groupId>
@@ -504,10 +510,6 @@
 							</exclude>
 							<exclude>
 								<groupId>org.springframework.boot</groupId>
-								<artifactId>spring-boot-starter-data-jpa</artifactId>
-							</exclude>
-							<exclude>
-								<groupId>org.springframework.boot</groupId>
 								<artifactId>spring-boot-starter-aop</artifactId>
 							</exclude>
 							<exclude>
@@ -525,50 +527,6 @@
 							<exclude>
 								<groupId>org.springframework</groupId>
 								<artifactId>spring-jdbc</artifactId>
-							</exclude>
-							<exclude>
-								<groupId>org.hibernate</groupId>
-								<artifactId>hibernate-core</artifactId>
-							</exclude>
-							<exclude>
-								<groupId>org.hibernate.javax.persistence</groupId>
-								<artifactId>hibernate-jpa-2.1-api</artifactId>
-							</exclude>
-							<exclude>
-								<groupId>org.javassist</groupId>
-								<artifactId>javassist</artifactId>
-							</exclude>
-							<exclude>
-								<groupId>antlr</groupId>
-								<artifactId>antlr</artifactId>
-							</exclude>
-							<exclude>
-								<groupId>org.jboss</groupId>
-								<artifactId>jandex</artifactId>
-							</exclude>
-							<exclude>
-								<groupId>dom4j</groupId>
-								<artifactId>dom4j</artifactId>
-							</exclude>
-							<exclude>
-								<groupId>org.hibernate.common</groupId>
-								<artifactId>hibernate-commons-annotations</artifactId>
-							</exclude>
-							<exclude>
-								<groupId>javax.transaction</groupId>
-								<artifactId>javax.transaction-api</artifactId>
-							</exclude>
-							<exclude>
-								<groupId>org.springframework.data</groupId>
-								<artifactId>spring-data-jpa</artifactId>
-							</exclude>
-							<exclude>
-								<groupId>org.springframework.data</groupId>
-								<artifactId>spring-data-commons</artifactId>
-							</exclude>
-							<exclude>
-								<groupId>org.springframework</groupId>
-								<artifactId>spring-orm</artifactId>
 							</exclude>
 							<exclude>
 								<groupId>org.springframework</groupId>
