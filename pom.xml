@@ -141,6 +141,10 @@
 								<artifactId>antlr-runtime</artifactId>
 							</exclude>
 							<exclude>
+								<groupId>antlr</groupId>
+								<artifactId>antlr</artifactId>
+							</exclude>
+							<exclude>
 								<groupId>org.antlr</groupId>
 								<artifactId>stringtemplate</artifactId>
 							</exclude>
@@ -651,6 +655,34 @@
 							<exclude>
 								<groupId>org.codehaus.janino</groupId>
 								<artifactId>janino</artifactId>
+							</exclude>
+							<exclude>
+								<groupId>org.springframework.data</groupId>
+								<artifactId>spring-data-commons</artifactId>
+							</exclude>
+							<exclude>
+								<groupId>org.springframework</groupId>
+								<artifactId>spring-orm</artifactId>
+							</exclude>
+							<exclude>
+								<groupId>org.reap</groupId>
+								<artifactId>spring-data-mybatis</artifactId>
+							</exclude>
+							<exclude>
+								<groupId>org.reap</groupId>
+								<artifactId>spring-boot-starter-data-mybatis</artifactId>
+							</exclude>
+							<exclude>
+								<groupId>org.mybatis</groupId>
+								<artifactId>mybatis-spring</artifactId>
+							</exclude>
+							<exclude>
+								<groupId>org.mybatis</groupId>
+								<artifactId>mybatis</artifactId>
+							</exclude>
+							<exclude>
+								<groupId>org.hibernate.javax.persistence</groupId>
+								<artifactId>hibernate-jpa-2.1-api</artifactId>
 							</exclude>
 						</excludes>
 					</configuration>
